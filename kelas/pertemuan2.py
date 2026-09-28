@@ -36,14 +36,4 @@
 # Mengakses Value dalam Dictionary
 # print(buku['judul'])
 # print(buku['penulis'])
-# print(buku['halaman'])
-
-# fina = 30
-# difty = "28" \
-# tambah = fina + int (difty)
-# print (tambah)
-
-# nama = input("Masukan nama anda: ")
-# print(nama)
-
-# git
+# 

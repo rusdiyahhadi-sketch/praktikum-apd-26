@@ -1,0 +1,22 @@
+harga_merchandise = [45000, 50000, 60000, 75000, 90000,  120000] 
+biaya_bungkus_kado = 7500
+total_harga = harga_merchandise[0] + harga_merchandise[1] + harga_merchandise[2] + harga_merchandise[3] + harga_merchandise[4] + harga_merchandise[5] + biaya_bungkus_kado
+rata_rata = total_harga / len(harga_merchandise)
+nim = 90
+bolean  = nim  > rata_rata
+
+# Poin plus: k
+kurs_usd = 15800
+total_harga_usd = total_harga / kurs_usd
+
+# slice index negatif untuk barang_2 hingga barang_4
+barang_2_sampai_4 = harga_merchandise[-5:-2]
+
+print("Total harga merchandise dan biaya bungkus kado adalah: ", total_harga)
+print("Rata-rata harga merchandise adalah: ", rata_rata)
+print("nim adalah:", nim)
+print("Hasil perbandingan NIM dengan rata-rata adalah:",bolean)
+print("Total harga dalam USD: $%.2f" % total_harga_usd)
+print("Barang_2 hingga barang_4:", barang_2_sampai_4)   
+
+
