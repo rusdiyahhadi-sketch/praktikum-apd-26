@@ -1,0 +1,53 @@
+nama_panggilan = input("nama: ")
+nim = int(input("nim: "))
+
+if nama_panggilan == "diyah" and nim == 90:
+     print("Selamat datang, diyah!")
+     print("1. PS4 : 10000 /jam")
+     print("2. PS4 Pro : 15000 /jam")
+     print("3. PS5 : 20000 /jam")
+     pilihan = int(input("pilih konsol (1-3): "))     
+
+     if pilihan == 1:
+        konsol = "ps4"
+        harga = 10000
+     elif pilihan == 2:
+        konsol = "ps4_pro"
+        harga = 15000
+     elif pilihan == 3:
+        konsol = "ps5"
+        harga = 20000
+    
+     else:
+        print("pilihan tidak valid")
+        exit()
+
+
+     jam = int(input("jumlah jam sewa: "))
+     total_harga = harga * jam
+
+     if jam >= 5:
+        diskon = 0.08 * total_harga
+     elif jam >= 3:
+        diskon = 0.05 * total_harga
+     else:
+        diskon = 0 * total_harga
+     waktu = input("Sewa saat weekend atau weekday? ").lower()
+
+     if waktu == "weekend": 
+      biaya_weekend = 0.10 * total_harga
+     else:
+      biaya_weekend = 0
+         
+     total_bayar = total_harga - diskon + biaya_weekend
+     print("Nama          :", nama_panggilan)
+     print("NIM           :", nim)
+     print("Konsol        :", konsol)
+     print("Jumlah jam    :", jam)
+     print("Total harga   : Rp", int(total_harga))
+     print("Diskon durasi : Rp", int(diskon))
+     print("Biaya weekend : Rp", int(biaya_weekend))
+     print("Total bayar   : Rp", int(total_bayar))
+     print("=" * 30)
+else:
+     print("login gagal")
