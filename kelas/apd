@@ -1,0 +1,20 @@
+mahasiswa = {
+    "nama": "rusdiyah",
+    "NIM": "2609106090",
+    "prodi": "Informatika",
+    "semester": 1
+}
+
+mahasiswa["alamat"] = "Samarinda"
+mahasiswa["email"] = "rusdiyahhadi@email.com"
+mahasiswa["semester"] = 2
+
+print (len(mahasiswa))
+
+for key, value in mahasiswa.items():
+    print(key, ":", value)
+
+mahasiswa.pop("alamat")
+
+print(mahasiswa)
+
